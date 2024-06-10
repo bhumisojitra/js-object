@@ -284,24 +284,6 @@ let student = [{
 },
 ]
 
-
-// using for loop-----------------------------
-// for(let i = 0; i <= student.length - 1; i++){
-
-//     console.log(student[i]);
-
-//     studentdata.innerHTML += ` <tr>
-//         <td>${student[i].sr_no}</td>
-//         <td>${student[i].fname}</td>
-//         <td>${student[i].lname}</td>
-//         <td>${student[i].gr_id}</td>
-//         <td>${student[i].age}</td>
-//         <td>${student[i].phone}</td>
-//         <td>${student[i].address.city} :- ${student[i].address.pincode} :- ${student[i].address.state}</td>
-//         <td>${student[i].email}</td>
-//     </tr>`;
-// }
-
 //using foreach mehod-----------------------
 student.forEach((ele) => {
 
