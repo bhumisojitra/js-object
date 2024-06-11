@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>array of object</title>
         <style>
+            .container{
+                max-width: 1320px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: var(--gutter-width);
+                padding-right: var(--gutter-width);
+            }
             tr:nth-child(even) {
                 background-color: #E0E1DB;
             }
@@ -12,23 +19,11 @@
     </head>
     <body>
         <h1 style="text-align: center;">Student-Data</h1>
-        <table border="1" width="100%" cellspacing="0" cellpadding="10">
-            <thead>
-                <tr style="background-color: #27870C; color: white;">
-                    <th>sr_no</th>
-                    <th>fname</th>
-                    <th>lname</th>
-                    <th>gr_id</th>
-                    <th>age</th>
-                    <th>phone</th>
-                    <th>address</th>
-                    <th>email</th>
-                </tr>
-            </thead>
-            <tbody id="studentdata" align="center">
-
-            </tbody>
-        </table>
+        <div class="container">
+            <div class="card" id="studentdata" style="display: flex; flex-wrap: wrap;">
+                
+            </div>
+        </div>
 
         <script src="js/style.js"></script>
     </body>

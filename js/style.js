@@ -20,7 +20,7 @@ let student = [{
     "sr_no" : 2,
     "fname" : "moni",
     "lname" : "sojitra",
-    "gr_id" : 5578,
+    "gr_id" : 5579,
     "age" : 19,
     "phone" : 1234567890,
     "address" : {
@@ -282,21 +282,36 @@ let student = [{
     },
     email : "prachi@nu.edu.kp",
 },
+{
+    sr_no : 21,
+    fname : "khushali",
+    lname : "patel",
+    gr_id : 2563,
+    age : 29,
+    phone : 8965471236,
+    address : {
+        city : "gondal",
+        pincode : 395006,
+        state : "gujarat"
+    },
+    email : "khush@nu.edu.kp",
+},
 ]
+
 
 //using foreach mehod-----------------------
 student.forEach((ele) => {
 
     console.log(ele);
 
-    studentdata.innerHTML += ` <tr>
-        <td>${ele.sr_no}</td>
-        <td>${ele.fname}</td>
-        <td>${ele.lname}</td>
-        <td>${ele.gr_id}</td>
-        <td>${ele.age}</td>
-        <td>${ele.phone}</td>
-        <td>${ele.address.city} :- ${ele.address.pincode} :- ${ele.address.state}</td>
-        <td>${ele.email}</td>
-    </tr>`;
+    studentdata.innerHTML += ` <div style="padding: 25px; border-radius: 10px; background-color: #F1F1F2; width: 25%; margin-bottom: 30px; margin-left: 30px;">
+        <h2 style=" color: #1995AD">${ele.sr_no}</h2>
+        <h3 style=" color:#034d5c"">Firstname : ${ele.fname}</h3>
+        <h3 style=" color:#034d5c"">Lastname : ${ele.lname}</h3>
+        <h3 style=" color:#034d5c"">GR'ID : ${ele.gr_id}</h3>
+        <h3 style=" color:#034d5c"">Age : ${ele.age}</h3>
+        <h3 style=" color:#034d5c"">Phone-num. : ${ele.phone}</h3>
+        <h3 style=" color:#034d5c"">Address : ${ele.address.city} :- ${ele.address.pincode} :- ${ele.address.state}</h3>
+        <h3 style=" color:#034d5c"">Email : ${ele.email}</h3>
+    </div>`;
 });
